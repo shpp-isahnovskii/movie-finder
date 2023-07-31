@@ -22,6 +22,16 @@ function submitForm() {
     Year: formData.value.year
   }
   addMovie(newMovie)
+  formReset()
+  isModalOpen.value = false
+}
+function formReset() {
+  formData.value = {
+    title: '',
+    poster: '',
+    director: '',
+    year: ''
+  }
 }
 </script>
 
